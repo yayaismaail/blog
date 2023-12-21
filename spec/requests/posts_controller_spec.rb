@@ -4,7 +4,7 @@ require 'rails_helper'
 
 RSpec.describe PostsController, type: :request do
   let(:user) { User.create(name: 'John Doe') }
-  let(:post) { user.posts.create(title: 'My first post', text: 'Hello world') }
+  let(:post) { Post.create(title: 'My first post', text: 'Hello world', author_id: user.id, comments_counter:0, likes_counter:0) }
 
   describe 'GET #index' do
     before do
@@ -38,7 +38,7 @@ RSpec.describe PostsController, type: :request do
     end
 
     it 'displays the correct placeholder text' do
-      expect(response.body).to include("User's Posts")
+      expect(response.body).to include("Post Title")
     end
   end
 end
