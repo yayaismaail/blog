@@ -1,15 +1,11 @@
 # Top-level documentation comment for Post module
 class Post < ApplicationRecord
-  belongs_to :author, class_name: 'User', foreign_key: 'author_id', counter_cache: true
+  belongs_to :author, class_name: 'User'
   has_many :comments
   has_many :likes
 
-  after_create :update_user_counters
-  after_destroy :update_user_counters
-
-  def update_user_counters
+  def update_user_posts_counter
     author.update(posts_counter: author.posts.count)
-    update(comments_counter: comments.count, likes_counter: likes.count)
   end
 
   def recent_comments
