@@ -4,9 +4,9 @@
       <p class="post-text"><%= @post.text %></p>
     </div>
       <div class="counters post-counters">
-      <p class="small">Comments: <%= @post.comments_counter %></p>
+      <p class="small">Comments: <%= @post.comments.count %></p>
 
-      <p class="small">Likes: <%= @post.likes_counter %></p>
+      <p class="small">Likes: <%= @post.likes.count %></p>
       </div>
 </div>
 
