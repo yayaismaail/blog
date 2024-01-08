@@ -17,16 +17,16 @@
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
 
-# 📖 [MY BLOG APP] <a name="about-project"></a>
+# 📖 [ BLOG ] <a name="about-project"></a>
 
-**[My Blog App]** is a project created using Ruby on Rails for users to create posts. It can also allow users to comment on and like the posts
+**[My Blog App]** is a project created using Ruby on Rails for users to create posts, allow users to comment on and like the posts
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-<summary>My Blog App built with Ruby on Rails</summary>
+<summary>Blog built with Ruby on Rails</summary>
   <ul>
     <li><a href="https://www.ruby-lang.org/en/">PostgreSQL</a></li>
   </ul>
@@ -53,17 +53,23 @@ In order to run this project you need:
 
 Clone this repository to your desired folder:
 
-- git clone https://github.com/yayaismaail/my-blog-app
-- cd my-blog-app
-- code . <!-- If you are using VS Code -->
+- `git clone https://github.com/yayaismaail/blog`
+- `cd blog`
+- `code . `<!-- If you are using VS Code -->
 
 Open your terminal:
 
-Run: `rails c`
+Run:
+`bundle install`
+`rails s`
+
+After the server starts running, go to your browser and visit the following link:
+
+`http://localhost:3000/`
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="authors"></a>
 
 👤 **Ismail Halliru Muhammad**
 
@@ -77,7 +83,7 @@ Run: `rails c`
 
 - [Add pages] 
 - [Add UI] 
-- [Include basic styling] 
+- [Add styling] 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -85,7 +91,7 @@ Run: `rails c`
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/yayaismaail/my-blog-app/issues).
+Feel free to check the [issues page](https://github.com/yayaismaail/blog/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -97,7 +103,7 @@ If you like this project please show me support by giving it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my colleagues at Microverse for their supports during the project.
+I would like to thank all my partners at Microverse for their supports during the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
