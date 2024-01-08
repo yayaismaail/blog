@@ -14,14 +14,15 @@
  *= require_self
  */
 
-body {
-  background-color: #000;
-  color: #e0e0e0;
+ body {
+  background-color: #023a63;
+  color: #f8f6f6;
   padding: 20px;
 }
 
 * {
   box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 ul {
@@ -59,7 +60,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: solid 1px rgb(63, 66, 80);
+  border: solid 1px rgb(227, 230, 240);
   border-radius: 80px;
   padding: 30px;
   width: 80vw;
@@ -67,7 +68,7 @@ a {
 }
 
 .wrap {
-  border: solid 1px rgb(63, 66, 80);
+  border: solid 1px rgb(227, 230, 240);
   border-radius: 20px;
   padding: 20px 70px;
   font-size: 1.5em;
@@ -82,7 +83,6 @@ a {
 }
 
 .post {
-  border-bottom: solid 1px rgb(63, 66, 80);
   display: flex;
   justify-content: space-between;
 }
@@ -129,6 +129,15 @@ a {
   font-size: 1em;
 }
 
+.btn {
+  padding: 10px 15px;
+}
+
+.btn-post {
+  margin-left: 10px;
+  padding: 15px 20px;
+}
+
 .list {
   margin-left: -40px;
   margin-bottom: 20px;
@@ -142,6 +151,8 @@ a {
 .see-all-wrap {
   display: flex;
   justify-content: center;
+  flex-direction: row;
+  align-items: center;
 }
 
 .full-post {
@@ -151,4 +162,36 @@ a {
 
 .comment {
   font-size: 0.9em;
+}
+
+.text-area {
+  width: 30vw;
+  height: 5vw;
+  background-color: rgb(63, 66, 80);
+  color: #e0e0e0;
+}
+
+.title-area {
+  height: 2vw;
+}
+
+.like-comment-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.comment-btn {
+  display: flex;
+  justify-content: center;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.new-post {
+  display: flex;
+  flex-direction: column;
 }
