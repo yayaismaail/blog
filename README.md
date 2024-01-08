@@ -103,7 +103,7 @@ If you like this project please show me support by giving it a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank my partners at Microverse for their supports during the project.
+I would like to thank all my partners at Microverse for their supports during the project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
