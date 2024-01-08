@@ -18,10 +18,10 @@
 </div>
 
 <ul>
-  <% @user.posts.limit(3).each do |post| %>
+  <% @user.recent_posts.each_with_index do |post, index| %>
     <li class="post wrap list">
     <div>
-      <h4 class="title list-title"><%= post.title %></h4>
+      <h4 class="title list-title">Post <%= index+1  %>: <%= link_to post.title, user_post_path(@user, post) %></h4>
       <p class="post-text"><%= post.text %></p>
     </div>
       <div class="counters">
