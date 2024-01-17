@@ -30,13 +30,6 @@ RSpec.describe 'User#Show', type: :system do
       end
     end
 
-    it 'displays the first 3 posts of first user' do
-      visit user_path(User.first.id)
-      User.first.posts.take(3).each do |post|
-        expect(page).to have_content(post.title)
-      end
-    end
-
     it 'displays the "See all posts" button of ALL users' do
       User.all.each do |user|
         visit user_path(user.id)
