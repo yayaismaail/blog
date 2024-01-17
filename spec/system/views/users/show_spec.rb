@@ -49,10 +49,10 @@ RSpec.describe 'User#Show', type: :system do
     it 'displays the first 3 posts of ALL users' do
       User.all.each do |user|
         # Assuming each user has at least 3 posts for demonstration purposes
-        create_list(:post, 3, user: user)
+        create_list(:post, 3, user:)
 
         visit user_path(user.id)
-        
+
         # Check for the presence of the first 3 posts
         user.posts.take(3).each do |post|
           expect(page).to have_content(post.title)

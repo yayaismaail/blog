@@ -82,10 +82,10 @@ RSpec.describe 'Post#Index', type: :system do
     it 'displays pagination if there are more posts than fit on the view' do
       User.all.each do |user|
         # Assuming each user has 10 posts for demonstration purposes
-        create_list(:post, 10, user: user)
+        create_list(:post, 10, user:)
 
         visit user_posts_path(user.id)
-        
+
         # Check for the presence of the pagination section
         expect(page).to have_css('.pagination')
       end
