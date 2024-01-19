@@ -8,7 +8,7 @@
 </div>
 <div class="user-info">
 <span class="user-name"><%= @user.name %></span>
-<span class="post-count">Number of posts: <%= @user.posts.count %></span>
+<span class="post-count">Number of posts: <%= @user.posts_counter %></span>
 </div>
 </div>
 
@@ -21,9 +21,15 @@
       <p class="post-text"><%= post.text %></p>
     </div>
       <div class="counters">
-      <p class="small">Comments: <%= post.comments.count %></p>
-      <p class="small">Likes: <%= post.likes.count %></p>
+      <p class="small">Comments: <%= post.comments_counter %></p>
+      <p class="small">Likes: <%= post.likes_counter %></p>
       </div>
+
+      <% if can?(:destroy, post) %>
+        <% user = User.find(params[:user_id]) %>
+        <%= link_to 'Delete', user_post_path(user, post), data: { turbo_method: :delete, confirm: 'Are you sure you want to delete this post?' }, class: 'delete-button' %>
+      <% end %>
+
     </li>
     </a>
 
