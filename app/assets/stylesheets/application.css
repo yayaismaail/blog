@@ -15,14 +15,14 @@
  */
 
 body {
-  background-color: #023a63;
-  color: #f8f6f6;
+  background-color: #121d2e;
+  color: #e0e0e0;
   padding: 20px;
 }
 
 * {
   box-sizing: border-box;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 ul {
@@ -60,7 +60,7 @@ a {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  border: solid 1px rgb(227, 230, 240);
+  border: solid 1px rgb(63, 66, 80);
   border-radius: 80px;
   padding: 30px;
   width: 80vw;
@@ -68,7 +68,7 @@ a {
 }
 
 .wrap {
-  border: solid 1px rgb(227, 230, 240);
+  border: solid 1px rgb(63, 66, 80);
   border-radius: 20px;
   padding: 20px 70px;
   font-size: 1.5em;
@@ -83,6 +83,7 @@ a {
 }
 
 .post {
+  border-bottom: solid 1px rgb(63, 66, 80);
   display: flex;
   justify-content: space-between;
 }
@@ -207,4 +208,18 @@ a {
 
 .pad-left {
   margin-left: 20px;
+}
+
+.delete-button {
+  color: #fe4f70;
+  background: none;
+  border-radius: 10px;
+  padding: 5px 10px;
+}
+
+.comment-button {
+  color: #fe4f70;
+  background: none;
+  border-radius: 10px;
+  padding: 5px 10px;
 }
